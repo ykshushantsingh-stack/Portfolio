@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Shushant Kumar Singh | Full-Stack Developer & Data Analyst</title>
+<meta name="description" content="Portfolio of Shushant Kumar Singh: full-stack developer, data analyst and content creator from Lucknow, building AI tools with Python.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="code" aria-hidden="true"></canvas>
+<div class="herobg">
+<div class="bgphoto" aria-hidden="true"><img id="bgimg" src="assets/photo.jpg" alt=""></div>
+<div class="wrap">
+  <nav aria-label="Main">
+    <a class="mark" href="#top">~/shushant</a>
+    <ul>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#background">Background</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero" id="top">
+    <div>
+      <h1>Shushant Kumar Singh</h1>
+      <p class="lede"><strong>Full-stack developer and data analyst</strong> from Lucknow. I build AI tools in Python, analyze data with SQL, Excel and Power BI, and create content and speak in public.</p>
+      <p class="status"><i aria-hidden="true"></i>Incoming at Admissionshala.com</p>
+      <div class="cta">
+        <a class="btn primary" href="#projects">See my projects</a>
+        <a class="btn ghost" href="mailto:ykshushantsingh@gmail.com">Email me</a>
+      </div>
+    </div>
+  </header>
+</div>
+</div>
+
+<div class="wrap">
+  <section id="jarvis">
+    <h2>Try JARVIS</h2>
+    <ol class="flow">
+      <li><b>You speak or type</b>A command like “what time is it”.</li>
+      <li><b>Speech to text</b>Microphone audio becomes words.</li>
+      <li><b>Command match</b>The code works out what you asked.</li>
+      <li><b>Text to speech</b>JARVIS answers out loud.</li>
+    </ol>
+    <div class="term" id="term" role="group" aria-label="JARVIS demo">
+      <div class="term-bar"><i></i><i></i><i></i><span>jarvis</span><span class="st"><span id="stat">idle</span><span class="bars" aria-hidden="true"><u></u><u></u><u></u><u></u><u></u></span></span></div>
+      <div class="term-body" id="out" aria-live="polite"><span class="dim">Type a command, pick one below, or press Speak.</span><span class="caret"></span></div>
+      <div class="cmds" id="cmds">
+        <button type="button" data-c="what time is it">what time is it</button>
+        <button type="button" data-c="what day is it">what day is it</button>
+        <button type="button" data-c="open youtube">open youtube</button>
+        <button type="button" data-c="plan my study week">plan my study week</button>
+        <button type="button" data-c="help">help</button>
+      </div>
+      <div class="row">
+        <input id="inp" type="text" placeholder="Type a command and press Enter" aria-label="Command" autocomplete="off">
+        <button id="send" type="button">Run</button>
+        <button id="mic" type="button" hidden>Speak</button>
+      </div>
+      <div class="opt"><label><input type="checkbox" id="vo"> Speak replies aloud</label></div>
+    </div>
+    <p class="term-note">This is a small version running in your browser. The full JARVIS is a Python program that uses your computer’s microphone and opens sites for you.</p>
+  </section>
+
+  <section class="about" id="about">
+    <h2>About me</h2>
+    <p>I’m a Computer Science and Engineering student at Dr. A. P. J. Abdul Kalam Technical University in Lucknow. I like turning ideas into working software, whether that’s a voice assistant, an AI study planner or a clean, responsive web page.</p>
+    <p>Alongside development I work with data (Python, ML, SQL, Excel, Power BI), create content, and lead teams. I led my third-year major project and volunteered at college events.</p>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+
+    <article class="project">
+      <div>
+        <h3>JARVIS: AI Voice Assistant</h3>
+        <p class="stack">Python, Speech Recognition, Text-to-Speech, Web Automation, APIs</p>
+      </div>
+      <ul>
+        <li>Personal voice-controlled assistant that understands spoken commands and answers through speech.</li>
+        <li>Opens websites such as YouTube, Facebook and Instagram on command.</li>
+        <li>Gives the current time, date, day and calendar lookups entirely by voice.</li>
+        <li>Combines speech-to-text and text-to-speech pipelines for natural, hands-free use.</li>
+      </ul>
+    </article>
+
+    <article class="project">
+      <div>
+        <h3>Student Productivity AI Agent</h3>
+        <p class="stack">Python, OpenAI API, LangChain, Prompt Engineering, REST APIs</p>
+      </div>
+      <ul>
+        <li>AI agent that helps students prioritize tasks, plan study time and manage their schedule.</li>
+        <li>Uses LLM reasoning through the OpenAI API and LangChain to produce structured study plans and actionable task breakdowns.</li>
+        <li>Applies prompt engineering to make answers more accurate, consistent and goal-oriented.</li>
+      </ul>
+    </article>
+
+    <article class="project">
+      <div>
+        <h3>Prompt Studio</h3>
+        <p class="stack">HTML, CSS, JavaScript, OpenAI API</p>
+        <span class="tag">In progress</span>
+      </div>
+      <ul>
+        <li>A workspace for designing, testing and managing AI prompts, built with the OpenAI API and prompt engineering techniques.</li>
+      </ul>
+    </article>
+
+    <article class="project">
+      <div>
+        <h3>Netflix Clone</h3>
+        <p class="stack">HTML, CSS</p>
+      </div>
+      <ul>
+        <li>Responsive Netflix-inspired interface built during web development training.</li>
+        <li>Includes a navigation bar, banner section, content rows and footer.</li>
+        <li>Uses CSS Flexbox and Grid to adapt to different screen sizes.</li>
+      </ul>
+    </article>
+
+    <p><a href="https://github.com/ykshushantsingh-stack">See all my code on GitHub</a></p>
+  </section>
+
+  <section id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <div>
+        <h3>Languages</h3>
+        <ul class="chips"><li>Python</li><li>Java</li><li>JavaScript</li><li>HTML</li><li>CSS</li><li>SQL</li></ul>
+      </div>
+      <div>
+        <h3>Data and analytics</h3>
+        <ul class="chips"><li>Python</li><li>Machine learning</li><li>SQL</li><li>Excel</li><li>Power BI</li></ul>
+      </div>
+      <div>
+        <h3>Tools</h3>
+        <ul class="chips"><li>VS Code</li><li>Jupyter Notebook</li><li>GitHub</li><li>Linux</li></ul>
+      </div>
+      <div>
+        <h3>AI and prompting</h3>
+        <ul class="chips"><li>OpenAI API</li><li>LangChain</li><li>Prompt design</li><li>REST APIs</li></ul>
+      </div>
+      <div>
+        <h3>Coursework</h3>
+        <ul class="chips"><li>Data Structures &amp; Algorithms</li><li>Operating Systems</li><li>Network Security</li><li>DBMS</li><li>Artificial Intelligence</li><li>OOP</li><li>Web Development</li><li>Android Development</li></ul>
+      </div>
+      <div>
+        <h3>Beyond code</h3>
+        <ul class="chips"><li>Content creation</li><li>Leadership</li><li>Public speaking</li></ul>
+      </div>
+    </div>
+  </section>
+
+  <section id="background">
+    <h2>Background</h2>
+    <div class="two">
+      <div class="edu">
+        <h3>Education</h3>
+        <p><b>B.Tech, Computer Science and Engineering</b><span>Dr. A. P. J. Abdul Kalam Technical University, Lucknow, Uttar Pradesh</span></p>
+        <p><b>Intermediate, 62%</b><span>M.D.J Public School, Ara, Bihar. May 2021 to May 2023</span></p>
+      </div>
+      <div>
+        <h3>Certifications</h3>
+        <ul>
+          <li>5-Day AI Agents Intensive Course with Google (Kaggle, Google)</li>
+          <li>Spoken Tutorial, IIT Bombay (EduPyramids, SINE, IIT Bombay)</li>
+          <li>HTML, CSS, JavaScript and SQL Bootcamp (Lets Upgrade)</li>
+          <li>Ex-Campus Ambassador, Smarted Innovations</li>
+        </ul>
+      </div>
+      <div>
+        <h3>Achievements and involvement</h3>
+        <ul>
+          <li>Team Leader for the third-year major project.</li>
+          <li>Volunteered for on-desk registrations at college events.</li>
+          <li>Participated in a workshop in Uttar Pradesh.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact" id="contact">
+    <h2>Let’s talk</h2>
+    <p>I’m open to conversations about development, data and AI projects. Email is the quickest way to reach me.</p>
+    <ul class="links">
+      <li><b>Email</b> <a href="mailto:ykshushantsingh@gmail.com">ykshushantsingh@gmail.com</a></li>
+      <li><b>Phone</b> <a href="tel:+919142790070">+91 91427 90070</a></li>
+      <li><b>GitHub</b> <a href="https://github.com/ykshushantsingh-stack">github.com/ykshushantsingh-stack</a></li>
+      <li><b>More links</b> <a href="https://bit.ly/sush-link">bit.ly/sush-link</a></li>
+      <li><b>Location</b> Lucknow, Uttar Pradesh</li>
+    </ul>
+  </section>
+
+  <footer>© 2026 Shushant Kumar Singh</footer>
+</div>
+
+<script src="script.js" defer></script>
+</body>
+</html>
